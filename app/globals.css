@@ -1,1 +1,82 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-neutral-950: hsl(0, 0%, 0%);
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-blue-700: hsl(228, 99%, 58%);
+  --color-blue-600: hsl(228, 100%, 60%);
+  --color-blue-400: hsl(220, 100%, 64%);
+  --color-blue-200: hsl(227, 100%, 88%);
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+@utility text-preset-1 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 106%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 106%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-4 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 160%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-5-medium {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 165%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-5-regular {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 165%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-6-medium {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0px;
+}
+
+@utility text-preset-6-regular {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0px;
+}
