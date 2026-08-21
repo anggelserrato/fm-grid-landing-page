@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-const interSans = Inter({
+const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
 });
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`${interSans.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.className} h-full antialiased`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
